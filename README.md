@@ -1,5 +1,4 @@
 # Solar Tracker Project
-(same as the report.odt)
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Materials and Components](#materials-and-components)
@@ -10,17 +9,16 @@
 4. [Circuit Diagram](#circuit-diagram)
 5. [Code Explanation](#code-explanation)
 6. [Assembly](#assembly)
-7. [Future Improvements](#V2-Roadmap)
-8. [Conclusion](#conclusion)
-9. [References](#references)
+7. [v2 roadmap](#v2-roadmap)
+8. [References](#references)
 
 ---
 
 ## Project Overview
 
-A closed loop proportional control system using using an Arduino Uno to maximize light capture by aligning a solar panel with the sun as it moves.
+A closed loop proportional control system using an Arduino Uno to maximize light capture by aligning a solar panel with the sun as it moves.
 
-Although the initial design included four photoresistors and two degrees of freedom, this implementation uses two photoresistors and a single servo motor, achieving one degree of freedom. This simplified version still demonstrates the core functionality of a solar tracker by rotating to follow the brightest light source in one axis.
+This implementation uses two photoresistors and a single servo motor, achieving one degree of freedom. This simplified version still demonstrates the core functionality of a solar tracker by rotating to follow the brightest light source in one axis.
 
 ## Materials and Components
 
@@ -67,7 +65,7 @@ The photoresistors detect light intensity, with each sensor providing an analog 
 
 
 ### 3.3 Programming Guide
-The code reads the photoresistor values, calculates their difference, and moves the servo to align with the light source. A threshold value is used to filter out noise, preventing constant oscillation due to minor fluctuations in light. (See [Future Improvements](#future-improvements) for more on noise handling.)
+The code reads the photoresistor values, calculates their difference, and moves the servo to align with the light source. A threshold value is used to filter out noise, preventing constant oscillation due to minor fluctuations in light. (See [v2 roadmap](#v2-roadmap) for more on noise handling.)
 
 [GitHub Repository](https://github.com/philip344/solar_project/)
 
@@ -99,10 +97,6 @@ The program operates as a closed-loop proportional feedback control system. This
 - **System changes**:
   - *Control system*: While the Arduino Uno is excellent for prototyping, it is computational overkill for this project. An Arduino Nano or even a custom IC on a custom PCB could be more efficient and compact for the final design.
   - *Adding More Sensors*: Four photoresistors for two degrees of freedom, covering both vertical and horizontal planes.
-
-## Conclusion
-
-This solar tracker project successfully demonstrates a simple yet effective control system. With additional refinements, it has the potential to be a practical model. I really enjoyed working on this project and may revisit it in the future to explore further improvements and finish the design.
 
 ## References
 
