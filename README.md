@@ -10,7 +10,7 @@
 4. [Circuit Diagram](#circuit-diagram)
 5. [Code Explanation](#code-explanation)
 6. [Assembly](#assembly)
-7. [Future Improvements](#future-improvements)
+7. [Future Improvements](#V2-Roadmap)
 8. [Conclusion](#conclusion)
 9. [References](#references)
 
@@ -18,7 +18,7 @@
 
 ## Project Overview
 
-This project was part of my year 12 computer science course to investigate control systems. I chose to design a solar tracker using an Arduino Uno to maximize light capture by aligning a solar panel with the sun as it moves.
+A closed loop proportional control system using using an Arduino Uno to maximize light capture by aligning a solar panel with the sun as it moves.
 
 Although the initial design included four photoresistors and two degrees of freedom, this implementation uses two photoresistors and a single servo motor, achieving one degree of freedom. This simplified version still demonstrates the core functionality of a solar tracker by rotating to follow the brightest light source in one axis.
 
@@ -86,7 +86,7 @@ The program operates as a closed-loop proportional feedback control system. This
 - **Differential Reading**: Determines the side with more light and adjusts the servo to reduce the difference.
 - **Servo Control**: Incremental movement ensures smooth tracking without overcorrecting.
 
-## Future Improvements
+## V2 Roadmap
 
 - **Mechanical changes**:
   - *Addition of wire channels*: Adding internal wire channels to `Solar_cell_holder.stl` would prevent the photoresistor leads from tangling, resulting in a neater project.
@@ -102,7 +102,7 @@ The program operates as a closed-loop proportional feedback control system. This
 
 ## Conclusion
 
-This solar tracker project successfully demonstrates a simple yet effective control system. With additional refinements, it has the potential to be a practical model. I was unable to complete the project to its fullest extent, as I realized midway through that less was required than initially planned, and the project would be more time-consuming than expected. Nevertheless, I thoroughly enjoyed working on this project and may revisit it in the future to explore further improvements and finish the design.
+This solar tracker project successfully demonstrates a simple yet effective control system. With additional refinements, it has the potential to be a practical model. I really enjoyed working on this project and may revisit it in the future to explore further improvements and finish the design.
 
 ## References
 
